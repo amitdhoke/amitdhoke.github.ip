@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Love Calculator</title>
+  <!-- style -->
+  <link rel="stylesheet" href="C:\javasript\love.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- googleFont -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="loveCalcy">
+
+
+    <h1 class="headingPart">Love <i class="fas fa-heart"></i> Calculator</h1>
+    <p class="paraGraph">Test your bond with your loveone.</p>
+
+
+     <input type="text" class="inputType" name="name" placeholder="Your Name">
+
+     <input type="text" class="inputType"  name="name" placeholder="Love Name"><br>
+
+      <div class="btnType">
+        <button type="button" class="btn btn-danger btn-lg" onclick="checkLove()">Test Now</button>
+      </div>
+
+      <input type="text" class="inputType" id="lovevalue" name="" placeholder="Your Bond">
+
+</div>
+
+<script type="text/javascript">
+      function checkLove(){
+        var yourLoveValue=Math.random();
+        yourLoveValue=Math.floor(yourLoveValue*100)+1;
+        document.getElementById('lovevalue').value= yourLoveValue +"%";
+      }
+</script>
+
+</body>
+
+</html>
